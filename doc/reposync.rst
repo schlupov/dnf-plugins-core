@@ -48,6 +48,9 @@ All general DNF options are accepted. Namely, the ``--repoid`` option can be use
 ``--download-metadata``
     Download all repository metadata. Downloaded copy is instantly usable as a repository, no need to run createrepo_c on it.
 
+``-g, --gpgcheck``
+    Remove packages that fail GPG signature checking after downloading. Exit code is ``1`` if at least one package was removed.
+
 ``-m, --downloadcomps``
     Also download and uncompress comps.xml. Consider using ``--download-metadata`` option which will download all available repository metadata.
 
